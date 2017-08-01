@@ -1,50 +1,128 @@
-.wrapper {
-    width: 960px;
-    margin: 50px auto;
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
 }
+.cont{
+    width: 400px;
+    height: 300px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.btn{
+    width: 30px;
+    height: 30px;
 
-.carousel-hider {
-    width: 600px;
-    float: left;
+}
+.btn-prev{
+    background: rgb(206, 215, 26);
+    margin-right: 10px;
+}
+.btn-next{
+    background: rgb(50, 215, 146);
+    margin-left: 10px;
+}
+.view{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 300px;
+    height: 100%;
     overflow: hidden;
 }
-
-.carousel-list {
-    position: relative;
-    width: 10000px;
-    padding: 0;
-    list-style: none;
+.sliders{
+    min-width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 0;
+    transition: all .4s ease-in-out;
 }
-
-.carousel-element {
-    display: block;
-    margin-right: 25px;
-    float: left;
+.slider{
+    min-width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
-
-.carousel-element img {
-    max-width: 100px;
-    max-height: 100px;
+.slider:nth-child(1){
+    background: url('../img/apple.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
-
-.carousel-arrow-left, .carousel-arrow-right {
-    float: left;
-    display: block;
-    border: 1px solid grey;
-    background-color: lightgrey;
-    padding: 5px;
-    margin-top: 50px;
+.slider:nth-child(2){
+    background: url('../img/bender.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
-
-.carousel-arrow-left:hover, .carousel-arrow-right:hover {
-    cursor: pointer;
-    background-color: grey;
+.slider:nth-child(3){
+    background: url('../img/dino.gif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
-
-.carousel-arrow-left {
-    margin-right: 25px;
+.slider:nth-child(4){
+    background: url('../img/earth.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
-
-.carousel-arrow-right {
-    margin-left: 25px;
+.slider:nth-child(5){
+    background: url('../img/hand.gif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.slider:nth-child(6){
+    background: url('../img/hedgehog.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.slider:nth-child(7){
+    background: url('../img/panda.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.slider:nth-child(8){
+    background: url('../img/recycle.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.slider:nth-child(9){
+    background: url('../img/smile.gif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.slider:nth-child(10){
+    background: url('../img/apple.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.slider:nth-child(11){
+    background: url('../img/bender.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.slider:nth-child(12){
+    background: url('../img/dino.gif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.slider:nth-child(13){
+    background: url('../img/earth.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }

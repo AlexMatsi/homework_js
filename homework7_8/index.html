@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Tabs</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="lib/jquery/jquery-3.1.1.min.js"></script>
-    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js""></script>
+
 </head>
 <body>
     <div class="wrapper">
@@ -22,17 +21,17 @@
             <div id="tab1" style="position: relative">
                 <div class="input-group">
                     <label>First name</label>
-                    <input type="text" class="hover-help" placeholder="Name">
-                    <em class="help">Enter your name</em>
+                    <input type="text" title="Enter your name" class="hover-help" placeholder="Name">
+                    <em class="help"></em>
                 </div>
                 <div class="input-group">
                     <label>Last name</label>
-                    <input type="text" class="hover-help" placeholder="Surname">
+                    <input type="text" title="Enter your surname" class="hover-help" placeholder="Surname">
                     <em class="help">Enter your surname</em>
                 </div>
                 <div class="input-group">
                     <label>Email</label>
-                    <input type="email" class="hover-help" placeholder="Email">
+                    <input type="email" title="Enter your email" class="hover-help" placeholder="Email">
                     <em class="help">Enter your email</em>
                 </div>
                 <button type="button" id="show-help">Show help</button>
@@ -53,5 +52,7 @@
             </div>
         </div>
     </div>
+
+    <script src="js/tabs.js"></script>
 </body>
 </html>

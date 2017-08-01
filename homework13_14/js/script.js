@@ -14,8 +14,8 @@ $(function () {
                     },
                     {
                         id: 12,
-                        text: 'Java',
-                        correct: true
+                        text: 'Go',
+                        correct: false
                     },
                     {
                         id: 13,
@@ -98,6 +98,8 @@ $(function () {
     var wrapper = $('.wrapper');
     wrapper.append(header).append(questions).append(submit);
 
+    var result = $('.result');
+
     var $submitButton = $('#submit');
     $submitButton.on('click', function () {
         var maxResult = persistedTestObject.questions.length;
@@ -113,9 +115,20 @@ $(function () {
             }
         });
 
-        alert('You have scored ' + userResult + ' out of ' + maxResult);
+        result.css({
+            'display' : 'flex'
+        })
 
-        $('[type=checkbox]').prop('checked', false);
+        result.html('You have scored ' + userResult + ' out of ' + maxResult + '<div class="btn_result">OK</div>');
+        $('.btn_result').on('click', function(){
+            result.css({
+                'display': 'none'
+            })
+            $('[type=checkbox]').prop('checked', false);
+
+        })
+
+
+
     });
-
 })
